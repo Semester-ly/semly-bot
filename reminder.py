@@ -45,7 +45,7 @@ class ReminderCog(Cog):
 
     @property
     def TEST_CHANNEL(self):
-        return self.bot.get_channel(939658799059451904)
+        return self.bot.get_channel(1153795751118393384)
 
     def __init__(self, bot: Bot):
         self.bot: Bot = bot
@@ -168,16 +168,17 @@ class ReminderCog(Cog):
 
 
 def is_check_in_time(time: datetime) -> bool:
-    return time.weekday() == 5 and time.hour == 18 and time.minute == 0
+    # return time.weekday() == 5 and time.hour == 18 and time.minute == 0
+    return False
 
 
 def is_hour_before_hack_session(time: datetime) -> bool:
-    return time.weekday() == 1 and time.hour == 18 and time.minute == 0
+    return time.weekday() == 5 and time.hour == 13 and time.minute == 0
 
 
 def is_hack_session_time(time: datetime) -> bool:
-    return time.weekday() == 1 and time.hour == 19 and time.minute == 0
+    return time.weekday() == 5 and time.hour == 14 and time.minute == 0
 
 
 def is_post_hack_session_time(time: datetime) -> bool:
-    return time.weekday() == 1 and time.hour == 20 and time.minute == 0
+    return time.weekday() == 5 and time.hour == 15 and time.minute == 0

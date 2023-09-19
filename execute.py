@@ -3,7 +3,7 @@ from nextcord.ext.commands import Bot, Cog, Context, command
 
 
 class ExecuteCog(Cog):
-    SUPERUSER = 229732075203330049
+    SUPERUSER = 581294190328152084
 
     def __init__(self, bot: Bot):
         self.bot = bot

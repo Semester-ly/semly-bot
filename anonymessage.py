@@ -5,8 +5,8 @@ from nextcord.abc import PrivateChannel
 
 
 class AnonyMessageCog(Cog):
-    BOT_ID = 939668303683653692
-    RECEIVER = 229732075203330049
+    BOT_ID = 1153740007136305202
+    RECEIVER = 581294190328152084
 
     def __init__(self, bot: Bot):
         self.bot = bot
