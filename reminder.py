@@ -181,4 +181,5 @@ def is_hack_session_time(time: datetime) -> bool:
 
 
 def is_post_hack_session_time(time: datetime) -> bool:
-    return time.weekday() == 5 and time.hour == 15 and time.minute == 0
+    # return time.weekday() == 5 and time.hour == 15 and time.minute == 0
+    return False
