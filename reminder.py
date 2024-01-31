@@ -173,11 +173,11 @@ def is_check_in_time(time: datetime) -> bool:
 
 
 def is_hour_before_hack_session(time: datetime) -> bool:
-    return time.weekday() == 5 and time.hour == 13 and time.minute == 0
+    return time.weekday() == 2 and time.hour == 18 and time.minute == 0
 
 
 def is_hack_session_time(time: datetime) -> bool:
-    return time.weekday() == 5 and time.hour == 14 and time.minute == 0
+    return time.weekday() == 2 and time.hour == 19 and time.minute == 0
 
 
 def is_post_hack_session_time(time: datetime) -> bool:
