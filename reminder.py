@@ -97,7 +97,7 @@ class ReminderCog(Cog):
         await attendance_message.add_reaction("❌")
         modality_message = await self.HACK_SESSION_CHANNEL.send(
             "Additionally, please react with 🧑 if you will be attending in-person "
-            "and 💻 if you will be attending remotely."
+            "and 💻 if you have to attend remotely."
         )
         await modality_message.add_reaction("🧑")
         await modality_message.add_reaction("💻")
@@ -173,13 +173,12 @@ def is_check_in_time(time: datetime) -> bool:
 
 
 def is_hour_before_hack_session(time: datetime) -> bool:
-    return time.weekday() == 2 and time.hour == 18 and time.minute == 0
+    return time.weekday() == 6 and time.hour == 15 and time.minute == 0
 
 
 def is_hack_session_time(time: datetime) -> bool:
-    return time.weekday() == 2 and time.hour == 19 and time.minute == 0
+    return time.weekday() == 6 and time.hour == 16 and time.minute == 0
 
 
 def is_post_hack_session_time(time: datetime) -> bool:
-    # return time.weekday() == 5 and time.hour == 15 and time.minute == 0
-    return False
+    return time.weekday() == 6 and time.hour == 17 and time.minute == 0
